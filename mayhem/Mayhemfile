@@ -1,0 +1,9 @@
+project: stltovoxel
+target: fuzz-stl
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_stl.py
+    libfuzzer: true
+    timeout: 12
